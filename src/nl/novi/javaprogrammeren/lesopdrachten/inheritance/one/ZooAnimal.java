@@ -1,9 +1,23 @@
 package nl.novi.javaprogrammeren.lesopdrachten.inheritance.one;
 
-public class ZooAnimal extends Animal{
+public abstract class ZooAnimal extends Animal {
 
-//    dierentuin:
-//    naam hok
-//    voeder dag
-//    land van herkoms
+//    [v] dierentuin:
+//    [v] naam hok
+//    [v] voeder dag
+//    [v] land van herkoms
+
+    private String cage;
+    private String feedDay;
+    private String countryOfOrigin;
+
+
+    public ZooAnimal(String name, String sex, String cage, String feedDay, String countryOfOrigin) {
+        super(name, sex);
+        this.cage = cage;
+        this.feedDay = feedDay;
+        this.countryOfOrigin = countryOfOrigin;
+    }
+
+
 }

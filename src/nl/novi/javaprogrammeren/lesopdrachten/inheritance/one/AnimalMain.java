@@ -4,9 +4,11 @@ public class AnimalMain {
 
     public static void main(String[] args) {
 
-
-
-
+    Wolf wolf = new Wolf("Dolf","man", "Gean Vilage", "Monday", "Duitland", "Winter");
+    Cat cat = new Cat("Poekie","vrouw", "Bassie", "wiscs", "Lapjes Kat", true, false);
+    Dog dog= new Dog("Dommel","man", "Semavoor", "appel Taart", "Tekkel");
+    Tiger tiger = new Tiger("King", "man", "Afrika", "Wensday", "Simbabwe", 9);
+    Lion lion = new Lion("bob", "man", "ragey", "Vrijday", "Afrieka",4);
 
     }
     /*

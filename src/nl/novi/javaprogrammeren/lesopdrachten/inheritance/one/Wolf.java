@@ -1,9 +1,16 @@
 package nl.novi.javaprogrammeren.lesopdrachten.inheritance.one;
 
 public class Wolf extends ZooAnimal{
-//     Ook willen we de naam van de roedel weten.
+//   [v] Ook willen we de naam van de roedel weten.
 
-    String packName;
+   private String packName;
+
+   public Wolf(String name, String sex, String cage, String feedDay, String countryOfOrigin, String packName){
+       super(name,sex,cage,feedDay,countryOfOrigin);
+       this.packName = packName;
+   }
+
+
 
 
 
