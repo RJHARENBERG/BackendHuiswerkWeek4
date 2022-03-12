@@ -1,8 +1,10 @@
 package nl.novi.javaprogrammeren.lesopdrachten.inheritance.one;
 
 public class Lion extends ZooAnimal {
+    /*
+    [v] hoeveelheid kinderen.
+    */
 
-    //     [v] hoeveelheid kinderen.
     private int numberOfCubs;
 
     public Lion(String name, String sex, String cage, String feedDay, String countryOfOrigin, int numberOfCubs) {
@@ -10,5 +12,8 @@ public class Lion extends ZooAnimal {
         this.numberOfCubs = numberOfCubs;
     }
 
-
+    @Override
+    public void sound() {
+        System.out.println("mouw?? GGGGAAAAAWWWWWWW!!!!!");
+    }
 }

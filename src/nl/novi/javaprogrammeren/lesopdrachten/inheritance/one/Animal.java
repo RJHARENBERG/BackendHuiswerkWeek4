@@ -1,37 +1,38 @@
 package nl.novi.javaprogrammeren.lesopdrachten.inheritance.one;
 
 public abstract class Animal {
-//    [v] Supper:
-//    [v] name Beest
-//    [v] geslacht
+    /*
+    [v] Supper:
+    [v] name Beest
+    [v] geslacht
 
-//    Metode:
-//    bewegen
-//    geluid
-//    slapen
+    [v] Metode:
+    [v] bewegen
+    [v] geluid
+    [v] slapen
+    */
 
     private String name;
     private String sex;
 
-    public Animal(String name, String sex){
+    public Animal(String name, String sex) {
         this.name = name;
         this.sex = sex;
-
     }
 
-
-    public Animal() {
-
+    public void move() {
+        System.out.println("geen zin");
     }
 
-    public void move (){}
+    public void sound() {
+        System.out.println("wat ben ik voor geluid?");
+    }
 
-    public void sound (){}
-
-    public void sleep (){
+    public void sleep() {
         System.out.println("zzzzzzzzzzzzzzzzzzzzzzzz");
     }
 
-
-
+    public void eat(String feedDay) {
+        System.out.println("when it's " + feedDay + " I eat my favorite food ");
+    }
 }
